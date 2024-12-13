@@ -8,6 +8,7 @@ import SettingsPage from './pages/SettingsPage.jsx'
 import ProfilePage from './pages/ProfilePage.jsx'
 import { useAuthStore } from './store/useAuthStore.js'
 import { Loader } from "lucide-react"
+import { Toaster } from 'react-hot-toast'
 function App() {
   const {authUser, checkAuth, isCheckingAuth} = useAuthStore();
 
@@ -24,7 +25,7 @@ function App() {
      )
   }
 
-  console.log("authUser: ",{authUser});
+  console.log("authUser1: ",{authUser});
 
   return (
     <div > 
@@ -34,8 +35,10 @@ function App() {
         <Route path='/signup' element={!authUser ? <SignupPage /> : <Navigate to="/" />} />
         <Route path='/login' element={!authUser ? <LoginPage /> : <Navigate to="/" />} />
         <Route path='/settings' element={<SettingsPage />} />
-        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/profile' element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
       </Routes>
+
+      <Toaster />
     </div>
   )
 }
