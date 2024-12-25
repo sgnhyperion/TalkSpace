@@ -33,6 +33,18 @@ const Sidebar = () => {
                 </div>
 
                 {/* Search Bar */}
+                <div className="mt-3 hidden lg:flex items-center gap-2">
+                    <div className="relative w-full">
+                        <Search className="absolute top-1/2 left-3 transform -translate-y-1/2 text-zinc-500" size={16} />
+                        <input
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            placeholder="Search users..."
+                            className="input input-bordered input-sm w-full pl-10"
+                        />
+                    </div>
+                </div>
 
                 {/* Online Filter Toggle */}
                 <div className="mt-3 hidden lg:flex items-center gap-2">
