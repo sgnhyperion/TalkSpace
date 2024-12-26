@@ -66,9 +66,9 @@ export const sendMessage = async (req, res) => {
         }
 
         // Emit to sender
-        if (senderSocketId) {
-            io.to(senderSocketId).emit("newMessage", newMessage);
-        }
+        // if (senderSocketId) {
+        //     io.to(senderSocketId).emit("newMessage", newMessage);
+        // }
 
         res.status(200).json(newMessage);
     } catch (error) {
