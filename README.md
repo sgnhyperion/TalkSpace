@@ -11,7 +11,7 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
 - **Online Status:** Display users currently online.
 - **Media Support:** Upload and send images in chat messages.
 - **Search & Filters:** Search for users and filter by online status.
-- **Themes:** Multiple themes functionality
+- **Themes:** Multiple themes functionality in settings page
 
 ---
 
@@ -25,10 +25,9 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
 
 ## Usage
 1. Open the application in your browser:
+     https://talkspace-zjuw.onrender.com
 2. Register or log in with your credentials.
 3. Start chatting with other users in real-time!
-
----
 
 ---
 
