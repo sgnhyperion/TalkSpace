@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useAuthStore } from "../store/useAuthStore";
-import { LogOut, MessageSquare, Settings, User } from "lucide-react";
+import { LogOut, MessageSquare, Settings, User, Home } from "lucide-react";
 
 const Navbar = () => {
   const { logout, authUser } = useAuthStore();
+
+  const showHomeButton = ['/profile', '/settings'].includes(useLocation().pathname);
 
   return (
     <header
@@ -22,6 +24,17 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-2">
+
+            {showHomeButton && (
+              <Link 
+              to="/" 
+              className="btn btn-sm gap-2 transition-colors"
+              >
+                <Home className="w-4 h-4" />
+                <span className="hidden sm:inline">Home</span>
+              </Link>
+            )}
+
             <Link
               to={"/settings"}
               className={`
