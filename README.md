@@ -41,8 +41,8 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
 ### Steps
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-username/chat-application.git
-   cd chat-application
+   git clone git@github.com:sgnhyperion/TalkSpace.git
+   cd TalkSpace
    ```
 
 2. **Set Up the Backend**
@@ -56,16 +56,17 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
      ```
    - Create a `.env` file and configure the following:
      ```env
-     PORT=your PORT
-     MONGO_URI=your_mongo_database_uri
-     JWT_SECRET=your_jwt_secret
-     CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-     CLOUDINARY_API_KEY=your_cloudinary_api_key
-     CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+         DB_URI=Your_DB_URI
+         PORT=5000
+         JWT_SECRET=your_secret_key
+         CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+         CLOUDINARY_API_KEY=your_Cloudinary_API_KEY
+         CLOUDINARY_API_SECRET=your_Cloudinary_API_KEY_Secret
+         NODE_ENV=development
      ```
    - Start the backend server:
      ```bash
-     npm start
+     npm run start
      ```
 
 3. **Set Up the Frontend**
@@ -79,7 +80,7 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
      ```
    - Start the frontend development server:
      ```bash
-     npm start
+     npm run start
      ```
 
 ---
