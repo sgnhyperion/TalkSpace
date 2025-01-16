@@ -107,6 +107,15 @@ const LoginPage = () => {
             </p>
           </div>
         </div>
+
+        <div className="mt-8 text-base-content/60 flex flex-col">
+          <h3 className="font-medium mb-2">Demo Account</h3>
+          <div>
+            <p className="font-medium mb-2">Email: harsh@mail.com</p>
+            <p className="font-medium mb-2">Password: 123456</p>
+          </div>
+      </div>
+
       </div>
 
       {/* Right Side - Image/Pattern */}

@@ -14,6 +14,7 @@ export const useAuthStore = create((set, get) => ({
     isCheckingAuth: true,
     onlineUsers: [],
     socket: null,
+    admin: false,
 
     checkAuth: async () => {
         try {
@@ -58,9 +59,15 @@ export const useAuthStore = create((set, get) => ({
         try {
             const res = await axiosInstance.post("/auth/login", data);
             set({ authUser: res.data });
-            // console.log("authUser2: ", authUser);
+
+            if(res.data.email === "harsh@mail.com") {
+                set({ admin: true });
+                console.log("Admin logged in");
+            }
+
             toast.success("Logged in successfully");
             get().connectSocket();
+
         } catch (error) {
             toast.error(error.response.data.message);
         } finally{

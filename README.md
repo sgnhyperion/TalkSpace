@@ -32,6 +32,10 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
 ---
 
 ## Future Enhancements
+- Delete chat
+- View Photo
+- delete account
+- edit name
 - Add group chat functionality.
 - Add typing indicators for real-time feedback.
 - Implement message read receipts.
