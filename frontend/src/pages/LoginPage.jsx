@@ -108,13 +108,14 @@ const LoginPage = () => {
           </div>
         </div>
 
-        <div className="mt-8 text-base-content/60 flex flex-col">
-          <h3 className="font-medium mb-2">Demo Account</h3>
+        <div className="mt-8 p-2 max-w-md mx-auto bg-gray-50 border border-gray-200 rounded-lg shadow-md w-1/4 h-1/9 text-center">
+          <h3 className="text-lg font-bold text-gray-900">Demo Account : </h3>
           <div>
-            <p className="font-medium mb-2">Email: harsh@mail.com</p>
-            <p className="font-medium mb-2">Password: 123456</p>
+            <p className="text-gray-800 text-sm">Email: <span className="text-green-500 font-medium">demo@mail.com</span></p>
+            <p className="text-gray-800 text-sm">Password: <span className="text-green-500 font-medium">123456</span></p>
           </div>
-      </div>
+        </div>
+
 
       </div>
 
