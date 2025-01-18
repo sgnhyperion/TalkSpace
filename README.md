@@ -25,7 +25,6 @@ A real-time chat application built using the MERN (MongoDB, Express.js, React.js
 
 ## Usage
 1. Open the application in your browser:
-     https://talkspace-zjuw.onrender.com
 2. Register or log in with your credentials.
 3. Start chatting with other users in real-time!
 
